@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const IndexComponent = () => {
   return (
-    <div>IndexComponent</div>
-  )
-}
+    <>
+      <div className="container">
+        <h1 class="my-5">Head</h1>
+      </div>
+    </>
+  );
+};
 
-export default IndexComponent
+export default IndexComponent;

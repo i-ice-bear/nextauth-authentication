@@ -1,5 +1,15 @@
-import '../global.css'
+import React from "react";
+import NavbarComponent from "../components/Router/Navbar";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../global.css';
 
-export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const AppComponent = ({ Component, pageProps }) => {
+  return (
+    <>
+      <NavbarComponent />
+      <Component {...pageProps} />
+    </>
+  );
+};
+
+export default AppComponent;
