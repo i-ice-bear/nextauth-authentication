@@ -1,17 +1,29 @@
 {
-  "private": true,
+  "name": "codespaces-nextjs",
+  "version": "1.0.0",
+  "description": "Welcome to your shiny new Codespace running Next.js! We've got everything fired up and running for you to explore Next.js.",
+  "main": "index.js",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "dev": "next dev"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i-ice-bear/nextauth-authentication.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/i-ice-bear/nextauth-authentication/issues"
+  },
+  "homepage": "https://github.com/i-ice-bear/nextauth-authentication#readme",
   "dependencies": {
     "@nextui-org/react": "^1.0.0-beta.12",
     "bootstrap": "^5.2.3",
-    "next": "latest",
+    "dotenv": "^16.0.3",
+    "next": "^13.1.6",
     "next-auth": "^4.19.2",
-    "react": "^17.0.2",
+    "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
-    "react-dom": "^17.0.2"
+    "react-dom": "^18.2.0"
   }
 }
