@@ -2,6 +2,7 @@
   "name": "codespaces-nextjs",
   "version": "1.0.0",
   "description": "Welcome to your shiny new Codespace running Next.js! We've got everything fired up and running for you to explore Next.js.",
+  "type":"module",
   "main": "index.js",
   "scripts": {
     "dev": "next dev"
@@ -20,6 +21,7 @@
     "@nextui-org/react": "^1.0.0-beta.12",
     "bootstrap": "^5.2.3",
     "dotenv": "^16.0.3",
+    "mongoose": "^6.9.0",
     "next": "^13.1.6",
     "next-auth": "^4.19.2",
     "react": "^18.2.0",
