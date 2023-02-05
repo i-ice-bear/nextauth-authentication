@@ -1,6 +1,6 @@
 const { default: mongoose, Collection } = require("mongoose");
 
-const productDesc = mongoose.Schema({
+const Products = mongoose.Schema({
   productTitle: { type: String, default: null, required: true },
   productImage: { default: null, required: true, type: String },
   productDescription: { default: null, required: true, type: String },
@@ -8,4 +8,4 @@ const productDesc = mongoose.Schema({
 });
 
 mongoose.models = {};
-export default mongoose.model("product", productDesc);
+export default mongoose.model("product", Products);
