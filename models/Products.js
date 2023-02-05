@@ -1,22 +1,11 @@
-const { default: mongoose } = require("mongoose");
+const { default: mongoose, Collection } = require("mongoose");
 
-const productSchema = new mongoose.Schema(
-  {
-    title: { type: String, default: null, required: true },
-    userName: { type: String, default: null },
-    products: [
-      {
-        productId: { type: Number, required: 0 },
-        productName: { type: String, default: null },
-        productDescription: { type: String, default: null },
-      },
-    ],
-    address: { type: String, default: null },
-    deliveryLocation: { type: String, default: null, require: true },
-    amountProduct: { type: Number, default: 0 },
-    productStatus: { type: "String", default: "Pending", require: true },
-  },
-  { timestamps: true, timeseries: true }
-);
+const productDesc = mongoose.Schema({
+  productTitle: { type: String, default: null, required: true },
+  productImage: { default: null, required: true, type: String },
+  productDescription: { default: null, required: true, type: String },
+  prodcutPrice: { default: null, required: true, type: Number },
+});
 
-export default mongoose.model("product", productSchema);
+mongoose.models = {};
+export default mongoose.model("product", productDesc);

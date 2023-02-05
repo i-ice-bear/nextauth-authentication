@@ -13,9 +13,5 @@ const dataSet = new newSchema({
 });
 dataSet.save().then(() => console.log(dataSet));
 
-export default mongoose.model(
-  "Schema",
-  newSchema,
-  undefined,
-  mongoose.ConnectionStates || undefined
-);
+mongoose.models = {};
+export default mongoose.model("Schema", newSchema);
