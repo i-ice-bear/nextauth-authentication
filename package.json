@@ -2,7 +2,7 @@
   "name": "codespaces-nextjs",
   "version": "1.0.0",
   "description": "Welcome to your shiny new Codespace running Next.js! We've got everything fired up and running for you to explore Next.js.",
-  "type":"module",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "next dev"
@@ -21,11 +21,23 @@
     "@nextui-org/react": "^1.0.0-beta.12",
     "bootstrap": "^5.2.3",
     "dotenv": "^16.0.3",
+    "firebase": "^9.17.1",
+    "firebase-cli": "^1.2.0",
     "mongoose": "^6.9.0",
     "next": "^13.1.6",
     "next-auth": "^4.19.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@mdx-js/loader": "^2.3.0",
+    "@mdx-js/react": "^2.3.0",
+    "@next/mdx": "^13.1.6",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.6",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   }
 }
